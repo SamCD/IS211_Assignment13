@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+  <ul class="students">
+  {% for student in students %}
+    <li>{{ student.ID }},{{ student.lastName }},{{ student.firstName }}</li>
+  {% endfor %}
+  </ul>
+  <ul class="quizzes">
+  {% for quiz in quizzes %}
+	<li>{{ quiz.ID }},{{ quiz.subject }},{{ quiz.questions }},{{ quiz.testDate }}</li>
+  {% endfor %}
+  </ul>
+
+{% endblock %}
