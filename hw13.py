@@ -5,7 +5,7 @@ from contextlib import closing
 
 
 DATABASE = 'hw13.db'
-DEBUG = True
+DEBUG = False
 SECRET_KEY = 'aZ\xbe\xd7\x17\x9f\xb6\x01\x9d\xaaf\xf4x\xfb\xfe'
 USERNAME = 'admin'
 PASSWORD = 'password'
