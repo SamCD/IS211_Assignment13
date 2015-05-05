@@ -1,14 +1,17 @@
 {% extends "layout.html" %}
 {% block body %}
+  <p>Students</p>
   <ul class="students">
   {% for student in students %}
-    <li>{{ student.ID }},{{ student.lastName }},{{ student.firstName }}</li>
+    <li>{{ student.lastName }}, {{ student.firstName }}</li>
   {% endfor %}
   </ul>
+  <p>Quizzes</p>
   <ul class="quizzes">
   {% for quiz in quizzes %}
-	<li>{{ quiz.ID }},{{ quiz.subject }},{{ quiz.questions }},{{ quiz.testDate }}</li>
+	<li>{{ quiz.subject }}, {{ quiz.questions }}, {{ quiz.testDate }}</li>
   {% endfor %}
   </ul>
+  <a href="{{ url_for('add_result') }}">Add New Result</a>
 
 {% endblock %}
