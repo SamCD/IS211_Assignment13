@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <form action="{{ url_for('add_quiz') }}" method=post>
+  Subject:<br>
+  <input type="text" name="subject">
+  <br># of questions:<br>
+  <input type="number" name="questions">
+  <br>
+  Test Date:<br><input type="date" name="testDate">
+  <br>
+  <input type="submit" value=Enter>
+  </form>
+  
+
+{% endblock %}
