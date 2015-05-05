@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block body %}
+
+{% if msg %}<p class=msg> {{ msg }}{% endif %}
+<ul class="results">
+  {% for result in results %}
+    <li>{{ result.quiz }}, {{ result.grade }}</li>
+  {% endfor %}
+  </ul>
+
+{% endblock %}
